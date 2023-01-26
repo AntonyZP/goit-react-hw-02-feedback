@@ -1,6 +1,5 @@
-import { render } from "@testing-library/react";
 import React, {Component} from "react";
-
+import Section from 'components/Section';
 import Statistics from 'components/Statistics';
 
 
@@ -33,10 +32,10 @@ render() {
 
     return
      <div>
-        <section title = 'Please leave feedback'>
+        <Section title = 'Please leave feedback'>
 
-        </section>
-        <section>
+        </Section>
+        <Section>
            <Statistics
             good={good}
             neutral={neutral}
@@ -44,7 +43,7 @@ render() {
             total={this.countTotalFeedback()}
             positivePersentage={this.countPositiveFeedbackPercentage}
              />
-        </section>
+        </Section>
      </div>
 }
 };
