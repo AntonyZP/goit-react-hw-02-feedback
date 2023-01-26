@@ -1,8 +1,8 @@
-const Section = ({title, children}) => (
+const Section = ({ title, children }) => (
     <div>
-        <title>{title}</title>
-        {children}
+      <h1>{title}</h1>
+      {children}
     </div>
-)
+  );
 
-export default Section
+export default Section;
