@@ -1,8 +1,9 @@
-import React, {Component} from "react";
-import Section from './Section';
-import FeedbackOptions from './FeedbackOptions';
-import Notification from './Notification';
-import Statistics from './Statistics';
+import React, { Component } from 'react';
+import Section from '../Section';
+import FeedbackOptions from '../FeedbackOptions';
+import Notification from '../Notification';
+import Statistics from '../Statistics';
+import { Wrapper } from './App.styled';
 
 export class App extends Component {
     state = {
@@ -33,7 +34,7 @@ render() {
     const isAbsentFeedbacks = !(good+neutral+bad);
 
     return (
-     <div>
+     <Wrapper>
         <Section title="Please leave feedback">
             <FeedbackOptions
                 options={Object.keys(this.state)}
@@ -54,6 +55,6 @@ render() {
             )}
 
         </Section>
-     </div>)
+     </Wrapper>)
 }
 };
